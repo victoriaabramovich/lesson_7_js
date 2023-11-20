@@ -1,0 +1,47 @@
+.header-wraper{
+    background-color: aquamarine;
+    padding: 25px;
+    position: relative;
+}
+.header-block{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-ul{
+    display: flex;
+}
+.logo{
+    font-size: 30px;
+}
+.burger{
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    color: blueviolet;
+    font-size: 25px;
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width:480px){
+    .navigation{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .header-block{
+        flex-direction: column;
+    }
+    .nav-ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation.navActive{
+        display: block;
+    }
+}
